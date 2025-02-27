@@ -1,0 +1,52 @@
+.chessboard {
+    display: inline-block;
+    border: 2px solid #333;
+    
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .square {
+    width: 70px;
+    height: 70px;
+    cursor:pointer;
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .light {
+    background-color: #f0d9b5;
+  }
+  
+  .dark {
+    background-color: #b58863;
+  }
+  .chessboardContainer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    min-height: 100vh;
+          
+  }
+  .floating-piece {
+    pointer-events: none; 
+    font-size: 24px; 
+    z-index: 1000; 
+    opacity: 0.8; 
+    transform: translate(-50%, -50%); 
+  }
+  
+  .square.dragging {
+    opacity: 0.5;
+  }
+  
+  .square.valid-drop {
+    background-color: rgba(0, 255, 0, 0.3); 
+  }
+
+  
